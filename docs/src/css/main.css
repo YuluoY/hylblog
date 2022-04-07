@@ -1,0 +1,8 @@
+.sidebar .app-name .app-name-link img{
+    max-width: 30%
+}
+main .last-update-time{
+    text-align: right;
+    color: #9ba6b3;
+    font-size: 1.2em;
+}

@@ -1,0 +1,18 @@
+{
+  "include": [
+    "docs/src/**/**/*"
+  ],
+//  "exclude": [
+//    "../my_blog_website/docs/src/**/**/*"
+//  ],
+//  "files": [
+//    // 指定需要编译的ts文件
+//  ],
+
+  "compilerOptions": {
+    "target": "ES2015",
+    "module": "ES6",
+    "strict": false,
+  },
+
+}
