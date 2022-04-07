@@ -1,0 +1,29 @@
+.icon {
+    width: 3em;
+    height: 3em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+.backToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    z-index: 99;
+    display: none;
+}
+
+.backToTop button {
+    padding: 10px 6px;
+    border: solid 1px silver;
+    border-radius: 15px;
+    transition: 1s;
+    box-shadow: 1px 0px 10px silver;
+}
+
+.backToTop button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #2B2B2B;
+}

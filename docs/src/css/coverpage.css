@@ -1,3 +1,60 @@
 section.cover.has-mask .mask {
     opacity: 0;
 }
+
+/* region 主题按钮盒子样式 */
+.themeBox {
+    display: flex;
+    position: fixed;
+    z-index: 10;
+    right: 0px;
+    top: 100px;
+}
+
+#themeIcon {
+    transition: 1s;
+}
+
+#themeIcon:hover {
+    cursor: pointer;
+}
+
+.themeBox .themeBoxInner {
+    opacity: 0;
+    display: none;
+    margin-left: 10px;
+    line-height: 40px;
+    transition: 1s;
+}
+
+.themeBox .themeBoxInner input {
+    background-color: white;
+    outline: none;
+    border: none;
+    margin-right: 5px;
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: white;
+}
+
+.themeBox .themeBoxInner input:hover {
+    cursor: pointer;
+}
+
+.themeBox .themeBoxInner input:nth-of-type(1) {
+    background-color: rgb(0, 116, 217);
+}
+
+.themeBox .themeBoxInner input:nth-of-type(2) {
+    background-color: rgb(63, 63, 63);
+}
+
+.themeBox .themeBoxInner input:nth-of-type(3) {
+    background-color: #42B983;
+}
+
+.themeBox .themeBoxInner input:nth-of-type(4) {
+    background-color: rgb(0, 255, 255);
+}
+
+/* endregion */
