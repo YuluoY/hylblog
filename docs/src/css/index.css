@@ -8,22 +8,16 @@
 
 .backToTop {
     position: fixed;
-    bottom: 30px;
-    right: 20px;
+    bottom: 1.5em;
+    right: 0.9em;
     z-index: 99;
     display: none;
 }
 
-.backToTop button {
-    padding: 10px 6px;
-    border: solid 1px silver;
-    border-radius: 15px;
+.backToTop svg {
     transition: 1s;
-    box-shadow: 1px 0px 10px silver;
 }
 
-.backToTop button:hover {
+.backToTop svg:hover {
     cursor: pointer;
-    color: white;
-    background-color: #2B2B2B;
 }

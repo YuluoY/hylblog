@@ -16,7 +16,11 @@ export const parts = Object.create(null);
         return createNode('div', {
             className: 'backToTop',
             innerHTML: `
-                <button onclick="$valid.util.event.scrollBar('top', 5, event)">TOP</button>
+                    <svg class="icon" aria-hidden="true" 
+                        onclick="$valid.util.event.scrollBar('top', 5, event)">
+                        <use xlink:href="#icon-a-huojianqidongyunhang"></use>
+                    </svg>
+<!--                <button onclick="$valid.util.event.scrollBar('top', 5, event)">TOP</button>-->
             `,
         })
     }

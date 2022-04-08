@@ -1,11 +1,11 @@
 @font-face {
   font-family: "iconfont"; /* Project id  */
-  src: url('iconfont.ttf?t=1649237218667') format('truetype');
+  src: url('iconfont.ttf?t=1649425143163') format('truetype');
 }
 
 .iconfont {
   font-family: "iconfont" !important;
-  font-size: 40px;
+  font-size: 3.2em;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -37,5 +37,9 @@
 
 .icon-bilibili:before {
   content: "\e501";
+}
+
+.icon-a-huojianqidongyunhang:before {
+  content: "\e75c";
 }
 
