@@ -1,31 +1,39 @@
-import {backToTop, changeThemeBox} from "./pieced.js";
+import Valid from "./util/index.js";
+import {parts} from "./template.js";
 
-export function loadValidTheme(window) {
+export function loadValidTheme  () {
+    let backToTop = parts.backToTop();
+    let changeThemeBox = parts.changeThemeBox();
+    let themeLinkTag = parts.themeLinkTag();
+    document.head.appendChild(themeLinkTag);
+    let coverPageCenter = parts.coverPageCenter();
+    let navLeftBox = parts.navLeftBox();
+    let drawDownBtnBox = parts.drawDownBtnBox();
 
     window.onload = function () {
-        let {dom} = $valid.util;
-        let {render} = $valid.init;
-        let utilCore = $valid.util.core;
-        let initCore = $valid.init.core;
 
-        const main = dom.find('main');
+        if (Docsify.util.isMobile) {
+            document.body.style.fontSize = '12px';
+        }else if(Docsify.util.inBrowser){
+            document.body.className = 'ready';
+        }
 
         window.addEventListener('scroll', () => {
-            if (Math.ceil(scrollY) >= main.scrollHeight / 3 && utilCore.getStyle(backToTop, 'display') === 'none') {
+            if (Math.ceil(scrollY) >= main.scrollHeight / 3 && getComputedStyle(backToTop).display === 'none') {
                 backToTop.style.display = 'block';
-            } else if (scrollY <= main.scrollHeight / 3 && utilCore.getStyle(backToTop, 'display') === 'block') {
+            } else if (scrollY <= main.scrollHeight / 3 && getComputedStyle(backToTop).display === 'block') {
                 backToTop.style.display = 'none';
             }
         })
 
-
-        /* render cover page */
-        dom.find('section', ele => {
-            render.renderCoverPage(ele, [
-                backToTop, changeThemeBox
-            ], () => {
-                console.log('The cover page render finished !')
-            })
+        let section = Valid.util.dom.find('section');
+        let sectionPats = [backToTop, changeThemeBox, coverPageCenter, navLeftBox, drawDownBtnBox];
+        Valid.util.render.renderEle(section, sectionPats, () => {
+            sectionPats.forEach((part, i, arr) => arr[i] = null);
+            sectionPats = null;
+            section = null;
+            console.log("The cover page valid theme parts is rendered！");
         })
     }
+
 }

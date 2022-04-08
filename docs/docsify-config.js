@@ -1,11 +1,11 @@
-// const progressColorMapping = new Map({
-//     [Symbol.iterator]: function* () {
-//         yield ['buble', '#0074D9'];
-//         yield ['dark', '#EA6F5A'];
-//         yield ['vue', '#42B983'];
-//         yield ['dolphin', '#00FFFF'];
-//     }
-// });
+let progressColorMapping = new Map({
+    [Symbol.iterator]: function* () {
+        yield ['buble', '#0074D9'];
+        yield ['dark', '#EA6F5A'];
+        yield ['vue', '#42B983'];
+        yield ['dolphin', '#00FFFF'];
+    }
+});
 window.$docsify = {
     el: '#app',
     basePath: `${location.href.split('#')[0]}`,
@@ -79,8 +79,7 @@ window.$docsify = {
 
     progress: {
         position: "top",
-        color: `var(--theme-color,#42b983)`,
-        // color: progressColorMapping.get(localStorage.getItem('my_theme')),
+        color: progressColorMapping.get(localStorage.getItem('valid-theme')),
         height: "2px",
     },
     timeUpdater: {
@@ -102,3 +101,4 @@ window.$docsify = {
     // vueGlobalOptions: {}
 }
 
+progressColorMapping = null;

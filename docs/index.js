@@ -1,2 +1,5 @@
 import {loadValidTheme} from "./src/core/index.js";
-loadValidTheme(window);
+
+window.loadValidTheme = loadValidTheme;
+
+loadValidTheme();

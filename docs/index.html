@@ -17,15 +17,19 @@
   <link rel="stylesheet" href="src/css/index.css">
 
   <!-- 主题样式 -->
-  <link id="theme" rel="stylesheet" href="assets/theme/vue.css">
+<!--  <link id="theme" rel="stylesheet" href="assets/theme/vue.css">-->
 
+</head>
+<body>
   <!-- 修改封面页内容样式 -->
   <link rel="stylesheet" href="src/css/coverpage.css">
 
   <!-- 修改main节点下的内容样式 -->
   <link rel="stylesheet" href="src/css/main.css">
-</head>
-<body>
+
+  <!-- 引入时间线样式 -->
+  <link rel="stylesheet" href="assets/styles/jazz-timeline.css">
+
   <div id="app"></div>
 
   <!-- 添加jquery库 -->
@@ -40,7 +44,23 @@
   <!-- 添加docsify配置文件 -->
   <script type="module" src="./docsify-config.js"></script>
 
+
   <script type="module" src="index.js" defer></script>
+
+<!--  <script type="module" def>-->
+<!--    window.$valid.defaultOptions = {-->
+<!--      name: '田昭迪',-->
+<!--      navLeftName: '田昭迪',-->
+<!--      navLeftImg: 'assets/images/logo.png',-->
+<!--      logo: 'assets/images/logo.png',-->
+<!--      welcomingSpeech: '欢迎来到docsify-theme-valid！',-->
+<!--      maxim: '座右铭'-->
+<!--    }-->
+<!--    loadValidTheme()-->
+<!--  </script>-->
+
+  <!-- icon图标样式 -->
+  <script src="assets/scripts/iconfont.js" defer></script>
 
   <!-- 搜索功能 -->
   <script src="assets/scripts/search.min.js" defer></script>

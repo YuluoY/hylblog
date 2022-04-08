@@ -23,25 +23,10 @@
 
 :star2: **生活随感**：[关于我的破烂小屋](life/2022/home.md)
 
-[//]: # (<card-pagination>)
-
-[//]: # (<Card href="notes/JavaScript高级程序设计.md" title="JavaScript" name="雨落" date="2022/04/02" category="技术笔记"></Card>)
-
-[//]: # (<Card href="notes/Vue2.md" title="Vue2" name="雨落" date="2021/11/18" category="技术笔记"></Card>)
-
-[//]: # (<Card href="notes/Vue3.md" title="Vue3" name="雨落" date="2022/01/25" category="技术笔记"></Card>)
-
-[//]: # (<Card href="notes/React.md" title="React" name="雨落" date="2022/04/05" category="技术笔记"></Card>)
-
-[//]: # (<Card href="notes/Nodejs.md" title="NodeJs" name="雨落" date="2022/04/05" category="技术笔记"></Card>)
-
-[//]: # (<Card href="notes/SSM框架.md" title="SSM框架" name="雨落" date="2022/03/12" category="技术笔记"></Card>)
-
-[//]: # (<Card href="life/2022/home.md" title="关于我的破烂小屋Blog Website" name="雨落" date="2022/04/05" category="生活随感"></Card>)
-
-[//]: # (<Card href="https://www.xiaoyuzhoufm.com/episode/60fa5462fc5d26f06578d4f6")
-
-[//]: # (external=true title="Vue.js作者尤雨溪：框架设计就是不断地舍取" name="从零道一" category="小知识"></Card>)
-
-[//]: # (</card-pagination>)
+<card-pagination>
+<Card href="life/2022/home.md" title="关于我的破烂小屋Blog Website" name="雨落" date="2022/04/05" category="生活随感"></Card>
+<Card href="https://www.xiaoyuzhoufm.com/episode/60fa5462fc5d26f06578d4f6"
+            external=true title="Vue.js作者尤雨溪：框架设计就是不断地舍取" date="2021/08"
+            name="从零道一" category="小知识"></Card>
+</card-pagination>
 

@@ -5,4 +5,64 @@ main .last-update-time{
     text-align: right;
     color: #9ba6b3;
     font-size: 1.2em;
+    margin-top: 50px;
 }
+
+/*region Card and CardPagination vueComponents style*/
+
+#Card {
+    transition: 0.35s;
+    box-shadow: 0px 0px 2px silver;
+    border-radius: 5px;
+    color: #7F7F7F;
+    margin-top: 20px;
+}
+
+#Card:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 4px #9e9da2;
+}
+
+#Card .card-box {
+    padding: 25px 35px;
+}
+
+#Card .card-box .card-title {
+    font-size: 2.1em;
+}
+
+#Card .card-box div:last-child {
+    margin-top: 25px;
+    margin-bottom: -10px;
+}
+
+#Card .card-box > div span {
+    line-height: 2.3em;
+    margin-right: 2em;
+}
+
+#cardPagination .paging-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#cardPagination .paging-list button {
+    margin-right: 15px;
+    padding: 7px 10px;
+    box-shadow: 0px 0px 4px #9e9da2;
+    border-radius: 10px;
+    border: solid 1px #9e9da2;
+    transition: 0.5s;
+}
+
+#cardPagination .paging-list button:hover {
+    cursor: pointer;
+}
+
+.pagingActive {
+    background-color: #42B983;
+}
+
+/*endregion */

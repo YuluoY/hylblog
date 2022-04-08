@@ -2,6 +2,10 @@ section.cover.has-mask .mask {
     opacity: 0;
 }
 
+.github-corner svg{
+    transition: 1s;
+}
+
 /* region 主题按钮盒子样式 */
 .themeBox {
     display: flex;
@@ -55,6 +59,119 @@ section.cover.has-mask .mask {
 
 .themeBox .themeBoxInner input:nth-of-type(4) {
     background-color: rgb(0, 255, 255);
+}
+
+/* endregion */
+
+/*region coverPageCenter封面页中心内容样式 */
+.coverPageCenter {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.coverPageCenter .centerContent {
+    width: 100%;
+    margin-top: -180px;
+    text-align: center;
+    z-index: 9;
+}
+
+.coverPageCenter .centerContent img {
+    width: 10em;
+}
+
+.coverPageCenter .centerContent .contact {
+    width: 22em;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.coverPageCenter .centerContent .contact div {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    transition: 1s;
+    padding: 4px;
+}
+
+.coverPageCenter .centerContent .contact div svg {
+    font-size: 0.8em;
+}
+
+.coverPageCenter .centerContent .contact div:hover {
+    cursor: pointer;
+    background-color: #9ba6b3;
+}
+
+/*endregion*/
+
+/* region navLeftBox导航栏左侧内容盒子样式 */
+.navLeftBox {
+    height: 50px;
+    position: absolute;
+    margin: 25px 60px 0 0;
+    top: 20px;
+    left: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navLeftBox .author span {
+    transition: 1s;
+    margin-left: 0.7em;
+}
+
+.navLeftBox .logo {
+    padding: 12px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 1s;
+}
+
+.navLeftBox .logo img {
+    width: 3.5em;
+}
+
+.navLeftBox:hover {
+    cursor: pointer;
+}
+
+/* endregion */
+
+/* region drawDownBtnBox下拉按钮盒子样式 */
+.drawDownBtnBox {
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 100px;
+    opacity: 0.5;
+}
+
+.drawDownBtnBox .drawDownBtn {
+    font-size: 2em;
+    transition: 1s;
+}
+
+.drawDownBtnBox .drawDownBtn i {
+    font-size: 2em;
+    transition: 1s;
+}
+
+.drawDownBtnBox .drawDownBtn:hover {
+    cursor: pointer;
+    transform: scaleY(30%) rotateY(60deg);
+    -webkit-filter: blur(10px);
+}
+
+.drawDownBtnBox .drawDownBtn:active {
+    transform: rotateY(360deg);
 }
 
 /* endregion */

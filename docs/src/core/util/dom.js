@@ -34,10 +34,6 @@ export function createNode(tagName = 'span', options = {}) {
 }
 
 export function createVueComponent(componentName, options = {}) {
-    window.$docsify = window.$docsify || {};
-    if (Object.keys(window.$docsify).length) {
-        console.error(`The $docsify variable is not define in the window ! From util package's dom file createVueComponent function of Error！`)
-    }
     return window.$docsify.vueComponents[componentName] = options;
 }
 
