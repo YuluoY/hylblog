@@ -17,13 +17,11 @@
 那就美滋滋了。我之前用过我男神的`Vuepress`搭建博客站，然后在当时由于官方文档写得着实潦草，导致我遇到无数坑，坑的我是体无完肤、心疲力竭。
 我想在他的基础上改造一番，发现除了走自己开发主题这条路没有别的选择，想要改造简直难死（应该是我当时太菜了，噢，不对，现在也菜。唉😔）。
 
-&emsp;&emsp;这时候我就想说一下`Vuepress`和`docsify`有什么区别了。首先它们都是用`Vue`开发的静态博客框架。
-`Vuepress`是将`Markdown`文件渲染成`html`文件，然后就通过`vue-router`进行跳转。
-`docsify`是在运行时读取`Markdown`文件，通过地址栏，使用[marked](https://github.com/markedjs/marked)库解析文件，
-然后装载到一个`html`文件里。
-`docsify`相较于`Vuepress`运行会更快，因为`Vuepress`要将所有的`md`文件编译完成后才会打开页面，而`docsify`只需要按需解析。
-不会为每一个`md`文件生成`html`，但不利于更好的SEO。当然了，作者也想得到。官方上有SSR渲染优化，暂时我没搞明白，毕竟我只会用...
-暂时没能力做出贡献...
+&emsp;&emsp;这时候我就想说一下`Vuepress`和`docsify`有什么区别了。首先它们都是静态博客框架，就是你只需要在特定的文件夹下添加`Markdown文件`，
+框架会自动帮你处理，而不是像[CSDN](https://blog.csdn.net/weixin_42390185?type=blog)那样可以在网页上写博客，自动生成一系列的东西。`Vuepress`是将`Markdown`文件渲染成`html`文件，
+通过`vue-router`进行跳转。`docsify`是在运行时读取`Markdown`文件，通过地址栏，使用[marked](https://github.com/markedjs/marked)库解析文件，
+然后装载到一个`html`文件里。`docsify`相较于`Vuepress`运行会更快，因为`Vuepress`要将所有的`md`文件编译完成后才会打开页面，而`docsify`只需要按需解析。
+不会为每一个`md`文件生成`html`，但不利于更好的SEO。当然了，作者也想得到。官方上有SSR渲染优化，暂时我没搞明白，毕竟我只会用...暂时没能力做出贡献...
 
 &emsp;&emsp;耗时三四天的样子，心心念念的博客站终于完成了。其实吧，真要做一个特别好看的博客网站很容易，不要一个小时就可以了，
 网上的博客网站模板多的是，像[hexo](https://hexo.io/zh-cn/)框架的主题太多了，我之前clone了一个，但感觉直接拉取到本地，然后改改参数，

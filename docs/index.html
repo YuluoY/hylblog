@@ -1,91 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="description" content="Description">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="description" content="Description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 
-  <!-- 站点logo -->
-  <link rel="icon" href="assets/images/logo.png">
+    <!-- 站点logo -->
+    <link rel="icon" href="assets/images/logo.png">
 
-  <!-- 图标样式 -->
-  <link rel="stylesheet" href="assets/styles/iconfont.css">
+    <!-- 图标样式 -->
+    <link rel="stylesheet" href="assets/styles/iconfont.css">
 
-  <!-- 其他样式调优修改 -->
-  <link rel="stylesheet" href="src/css/index.css">
+    <!-- 其他样式调优修改 -->
+    <link rel="stylesheet" href="src/css/index.css">
 
-  <!-- 主题样式 -->
-<!--  <link id="theme" rel="stylesheet" href="assets/theme/vue.css">-->
+    <!-- 主题样式 -->
+    <!--  <link id="theme" rel="stylesheet" href="assets/theme/vue.css">-->
+    <link rel="prefetch" href="assets/theme/vue.css">
+    <link rel="prefetch" href="assets/theme/buble.css">
+    <link rel="prefetch" href="assets/theme/dark.css">
+    <link rel="prefetch" href="assets/theme/dolphin.css">
 
 </head>
 <body>
-  <!-- 修改封面页内容样式 -->
-  <link rel="stylesheet" href="src/css/coverpage.css">
+<!-- 修改封面页内容样式 -->
+<link rel="stylesheet" href="src/css/coverpage.css">
 
-  <!-- 修改main节点下的内容样式 -->
-  <link rel="stylesheet" href="src/css/main.css">
+<!-- 修改main节点下的内容样式 -->
+<link rel="stylesheet" href="src/css/main.css">
 
-  <!-- 引入时间线样式 -->
-  <link rel="stylesheet" href="assets/styles/jazz-timeline.css">
+<!-- 引入时间线样式 -->
+<link rel="stylesheet" href="assets/styles/jazz-timeline.css">
 
-  <div id="app"></div>
+<div id="app"></div>
 
-  <!-- 添加jquery库 -->
-  <script src="assets/scripts/jquery.min.js"></script>
+<!-- 添加jquery库 -->
+<script src="assets/scripts/jquery.min.js"></script>
 
-  <!-- 添加vue支持 -->
-  <script src="assets/scripts/vue.js"></script>
+<!-- 添加vue支持 -->
+<script src="assets/scripts/vue.js"></script>
 
-  <!-- 引入docsify核心文件 -->
-  <script src="assets/scripts/docsify.min.js"></script>
+<!-- 添加docsify配置文件 -->
+<script src="./docsify-config.js"></script>
 
-  <!-- 添加docsify配置文件 -->
-  <script type="module" src="./docsify-config.js"></script>
+<!-- 引入docsify核心文件 -->
+<script src="assets/scripts/docsify@4.js"></script>
 
 
-  <script type="module" src="index.js" defer></script>
 
-<!--  <script type="module" def>-->
-<!--    window.$valid.defaultOptions = {-->
-<!--      name: '田昭迪',-->
-<!--      navLeftName: '田昭迪',-->
-<!--      navLeftImg: 'assets/images/logo.png',-->
-<!--      logo: 'assets/images/logo.png',-->
-<!--      welcomingSpeech: '欢迎来到docsify-theme-valid！',-->
-<!--      maxim: '座右铭'-->
-<!--    }-->
-<!--    loadValidTheme()-->
-<!--  </script>-->
+<script>
+    window.validOptions = {
+        name: 'Yu Luo',
+        logo: 'assets/images/logo.png',
+        welcomingSpeech: '欢迎来到雨落的博客！',
+        maxim: '人生而自由，却无往不在枷锁之中。————卢梭',
+        navLeftImg: 'assets/images/logo.png',
+        navLeftName: '雨落',
+    }
+</script>
 
-  <!-- icon图标样式 -->
-  <script src="assets/scripts/iconfont.js" defer></script>
+<script src="bundle.js"></script>
 
-  <!-- 搜索功能 -->
-  <script src="assets/scripts/search.min.js" defer></script>
 
-  <!-- 文章计数功能 -->
-  <script src="assets/scripts/countable.js" defer></script>
 
-  <!-- 图片缩放功能 -->
-  <script src="assets/scripts/zoom-image.min.js" defer></script>
+<!-- region  插件-->
+<!-- icon图标样式 -->
+<script src="assets/scripts/iconfont.js" defer></script>
 
-  <!-- 代码一键Copy功能 -->
-  <script src="assets/scripts/docsify-copy-code.js" defer></script>
+<!-- 搜索功能 -->
+<script src="assets/scripts/search.min.js" defer></script>
 
-  <!-- 阅读进度条功能 -->
-  <script src="assets/scripts/progress.min.js" defer></script>
+<!-- 文章计数功能 -->
+<script src="assets/scripts/countable.js" defer></script>
 
-  <!-- 最后更新时间功能 -->
-  <script src="assets/scripts/time-updater.min.js" defer></script>
+<!-- 图片缩放功能 -->
+<script src="assets/scripts/zoom-image.min.js" defer></script>
 
-  <!-- Markdown中Java代码高亮功能 -->
-  <script src="assets/scripts/prism-java.min.js" defer></script>
+<!-- 代码一键Copy功能 -->
+<script src="assets/scripts/docsify-copy-code.js" defer></script>
 
-  <!-- 评论留言功能 -->
-  <script src="assets/scripts/Valine.min.js" defer></script>
-  <script src="assets/scripts/docsify-valine.min.js" defer></script>
+<!-- 阅读进度条功能 -->
+<script src="assets/scripts/progress.min.js" defer></script>
+
+<!-- 最后更新时间功能 -->
+<script src="assets/scripts/time-updater.min.js" defer></script>
+
+<!-- Markdown中Java代码高亮功能 -->
+<script src="assets/scripts/prism-java.min.js" defer></script>
+
+<!-- 评论留言功能 -->
+<script src="assets/scripts/Valine.min.js" defer></script>
+<script src="assets/scripts/docsify-valine.min.js" defer></script>
+
+<!-- endregion  插件-->
 
 </body>
 </html>

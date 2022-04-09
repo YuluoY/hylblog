@@ -24,8 +24,8 @@ const defaultOptions = {
 const Valid = Object.create(null);
 
 window.$valid = window.$valid || Valid;
-window.$valid.defaultOptions = window.$valid.defaultOptions ?
-    Object.assign(window.$valid.defaultOptions, defaultOptions) : Object.assign({}, defaultOptions);
+window.$valid.defaultOptions = window.validOptions ?
+    Object.assign(defaultOptions, window.validOptions) : Object.assign({}, defaultOptions);
 
 window.$valid.util = {
     core,

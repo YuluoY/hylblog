@@ -8,11 +8,11 @@ let progressColorMapping = new Map({
 });
 window.$docsify = {
     el: '#app',
-    basePath: `${location.href.split('#')[0]}`,
+    // basePath: `${location.href.split('#')[0]}`,
     name: '雨落',  // 文档标题，会显示在侧边栏顶部。
     logo: 'assets/images/logo.png',
     repo: 'https://github.com/YuluoY?tab=repositories',  // 设置github仓库，右上角会出现icon
-    homePage: 'README.md', // 设置首页，可自定义
+    // homePage: 'home.md', // 设置首页，可自定义
     coverpage: true, // 启动封页面，默认为_coverpage.md
     // maxLevel: 6, // 默认情况下会抓取文档中所有标题渲染成目录，可配置最大支持渲染的标题层级。 默认值为6
     loadNavbar: true,  // 设置导航栏，可以自定义md文件，默认为docs/_navbar.md
@@ -29,6 +29,8 @@ window.$docsify = {
     routerMode: 'hash', // default: 'hash'
     notFoundPage: '_404.md',
     topMargin: 90, // default: 0
+    requestHeaders: {
+    },
 
     search: {
         maxAge: 86400000, // 过期时间，单位毫秒，默认一天
