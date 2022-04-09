@@ -23,6 +23,8 @@
 :star2: **生活随感**：就想到啥说啥，看每天的心情了。应该更多的是吐槽...
 
 <card-pagination>
+<Card href="https://www.tangyuxian.com/2021/04/08/%E5%89%8D%E7%AB%AF/JavaScript/js-%E5%B8%B8%E7%94%A8%E7%9A%84js%E5%B7%A5%E5%85%B7%E5%87%BD%E6%95%B0/"
+            external=true title="常用的Js工具函数" name="糖羽仙" date="2022/04/09" category="技术文章"></Card>
 <Card href="article/2022/front-end/ES6模块化问题解决.md" title="ES6模块化问题解决" name="雨落" date="2022/04/09" category="技术文章"></Card>
 <Card href="life/2022/一个周敲代码的反思.md" title="一个周敲代码的反思" name="雨落" date="2022/04/08" category="生活随感"></Card>
 <Card href="article/2022/front-end/vue-router详解.md" title="vue-router详解" name="雨落" date="2022/04/08" category="技术文章"></Card>
