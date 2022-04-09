@@ -1,16 +1,5 @@
 # 归档
 
-[//]: # (<script>)
-
-[//]: # (    // let bArr = document.body.className.split&#40;' '&#41;;)
-
-[//]: # (    // bArr.push&#40;'close'&#41;;)
-
-[//]: # (    // document.body.className = bArr.join&#40;' '&#41;;)
-
-[//]: # (</script>)
-
-
 <TimeLine-box timeLineYear="2022">
 
 <time-line title="一个周敲代码的反思"

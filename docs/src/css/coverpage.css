@@ -77,7 +77,7 @@ section.cover.has-mask .mask {
     width: 100%;
     margin-top: -180px;
     text-align: center;
-    z-index: 9;
+    z-index: 0;
 }
 
 .coverPageCenter .centerContent img {

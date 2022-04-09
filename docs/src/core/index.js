@@ -12,10 +12,12 @@ export function loadValidTheme() {
     let drawDownBtnBox = parts.drawDownBtnBox();
 
     window.onload = function () {
+        const coverPageCenter = Valid.util.dom.find('.coverPageCenter');
         const main = Valid.util.dom.find('main');
         document.title = '雨落的博客'
 
         if (Docsify.util.isMobile) {
+            coverPageCenter.style.marginTop = '2em';
             document.body.style.fontSize = '12px';
         } else if (Docsify.util.inBrowser) {
             document.body.className = 'ready';
