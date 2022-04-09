@@ -10,8 +10,9 @@
 }
 .timeLineYear {
     position: absolute;
-    top: -0.8em;
+    top: -0.3em;
     font-size: 3em;
+    color: #27ACCE;
 }
 .fa {
     display: inline-block;
