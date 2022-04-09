@@ -23,7 +23,8 @@
 :star2: **生活随感**：就想到啥说啥，看每天的心情了。应该更多的是吐槽...
 
 <card-pagination>
-<Card href="life/2022/4-8.md" title="一个周敲代码的反思" name="雨落" date="2022/04/08" category="生活随感"></Card>
+<Card href="article/2022/front-end/ES6模块化问题解决.md" title="ES6模块化问题解决" name="雨落" date="2022/04/09" category="技术文章"></Card>
+<Card href="life/2022/一个周敲代码的反思.md" title="一个周敲代码的反思" name="雨落" date="2022/04/08" category="生活随感"></Card>
 <Card href="article/2022/front-end/vue-router详解.md" title="vue-router详解" name="雨落" date="2022/04/08" category="技术文章"></Card>
 <Card href="life/2022/home.md" title="关于我的破烂小屋" name="雨落" date="2022/04/05" category="生活随感"></Card>
 <Card href="https://www.xiaoyuzhoufm.com/episode/60fa5462fc5d26f06578d4f6"

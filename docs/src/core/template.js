@@ -92,7 +92,11 @@ export const parts = Object.create(null);
         <div class="author"><span style="font-size: 2em;color: ${$valid.util.core.themeMapping.get(localStorage.getItem('valid-theme') || 'vue')};">
             ${$valid.defaultOptions.navLeftName}</span>
         </div>
-            `
+            `,
+            onclick:function (){
+                alert('😄');
+                location.href = '/';
+            }
         })
     }
 

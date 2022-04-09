@@ -2,9 +2,24 @@
 
 <TimeLine-box timeLineYear="2022">
 
+<time-line title="ES6模块化问题解决"
+        content="使用<b>webpack</b>工具进行打包，对当前代码的降级可以去掉script标签引入的<b>type='module'</b>类型设置，
+避免引发<b style='color:red;'>Uncaught SyntaxError: Cannot use import statement outside a module</b>错误。"
+        href="article/2022/front-end/ES6模块化问题解决.md"
+        year=2022 month_day="04/09"
+        name="雨落">
+</time-line>
+
 <time-line title="一个周敲代码的反思"
         content="工欲善其事，必先利其器。"
         href="life/2022/一个周敲代码的反思.md"
+        year=2022 month_day="04/08"
+        name="雨落">
+</time-line>
+
+<time-line title="vue-router详解"
+        content="关于Vue路由的使用，包括：单级路由、多级路由、路由传参等知识。"
+        href="article/2022/front-end/vue-router详解.md"
         year=2022 month_day="04/08"
         name="雨落">
 </time-line>
