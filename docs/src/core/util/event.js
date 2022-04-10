@@ -101,13 +101,13 @@ export function showThemeBox() {
 }
 
 export function spreadLoadPage() {
-    $('.loadPage h1').animate({opacity: 0, zIndex: -9}, 1200, 'swing', function () {
+    $('.loadPage h1').animate({opacity: 0, zIndex: -9}, 1500, 'swing', function () {
         $(this).parent().css('z-index', -9);
     })
-    $('.loadPage div').animate({opacity: 0, width: 0}, 1200, 'swing');
-    setTimeout(() => {
-        $('body .loadPage').remove();
-    }, 3000)
+    $('.loadPage div').animate({width: 0}, 1500, 'swing');
+//     setTimeout(() => {
+//         $('body .loadPage').remove();
+//     }, 5000)
 }
 
 

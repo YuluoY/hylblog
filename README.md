@@ -6,8 +6,11 @@
 ```shell
  git clone https://github.com/YuluoY/hylblog.git
 ```
-
-2、在项目文件下打开终端，运行
+2、安装依赖
+```shell
+ npm install
+```
+3、在项目文件下打开终端，运行
 ```shell
  npm start
 ```
