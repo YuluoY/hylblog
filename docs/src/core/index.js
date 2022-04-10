@@ -15,7 +15,6 @@ export function loadValidTheme() {
     window.onload = function () {
 
         const main = Valid.util.dom.find('main');
-        document.title = '雨落的博客'
 
         if (Docsify.util.isMobile) {
             coverPageCenter.style.marginTop = '5em';

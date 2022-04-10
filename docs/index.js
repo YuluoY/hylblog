@@ -16,9 +16,7 @@ document.onreadystatechange = function () {
         spreadLoadPage();
         loadValidTheme();
         $('.mask').css('opacity', 0);
-
     } else {
         document.body.appendChild(loadPage);
     }
-
 }
