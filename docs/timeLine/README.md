@@ -2,6 +2,14 @@
 
 <TimeLine-box timeLineYear="2022">
 
+<time-line title="加载页面的实现"
+content="加载页面可以很好的解决浏览器在渲染DOM树时出现的样式问题。可能因为网速原因或者需要加载的文件过多，从而造成显示不完整的内容或样式，影响体验。
+添加一个加载页面能有效的进行过渡。"
+href="article/2022/front-end/加载页面的实现.md"
+year=2022 month_day="04/10"
+name="雨落">
+</time-line>
+
 <time-line title="ES6模块化问题解决"
         content="使用<b>webpack</b>工具进行打包，对当前代码的降级可以去掉script标签引入的<b>type='module'</b>类型设置，
 避免引发<b style='color:red;'>Uncaught SyntaxError: Cannot use import statement outside a module</b>错误。"

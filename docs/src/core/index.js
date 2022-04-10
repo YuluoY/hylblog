@@ -11,7 +11,9 @@ export function loadValidTheme() {
     let navLeftBox = parts.navLeftBox();
     let drawDownBtnBox = parts.drawDownBtnBox();
 
+
     window.onload = function () {
+
         const main = Valid.util.dom.find('main');
         document.title = '雨落的博客'
 

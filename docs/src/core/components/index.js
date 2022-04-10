@@ -12,7 +12,7 @@ export const Card = createVueComponent('Card', {
             <div class="card-box">
                 <div class="card-title">{{$attrs.title}}</div>
                 <div>
-                    <span class="card-name">发布者：{{$attrs.name}}</span>
+                    <span class="card-name">作者：{{$attrs.name}}</span>
                     <span class="card-date">时间：{{$attrs.date}}</span>
                     <span class="card-category">类别：{{$attrs.category}}</span>
                 </div> 
@@ -80,13 +80,13 @@ export const CardPagination = createVueComponent('CardPagination', {
     },
     methods: {
         initPaginationBtnBg() {
-            return themeMapping.get(localStorage.getItem('valid-theme')) || 'vue';
+            return themeMapping.get(localStorage.getItem('valid-theme') || 'vue');
         },
         pagingHandle(event) {
             const pageBtn = event.target;
             pageBtn.className = 'pagingActive';
-            $(pageBtn).siblings().attr('class', '')
-                .css('background-color', '');
+            $(pageBtn).addClass('pagingActive').css('background-color', this.initPaginationBtnBg());
+            $(pageBtn).siblings().removeClass('pagingActive').css('background-color', '');
             let s = (parseInt(pageBtn.innerText) - 1) * this.pagination;
             this.dataArrTemp = this.dataArr.slice(s, s + this.pagination);
             this.currPage = parseInt(pageBtn.innerText);
@@ -102,7 +102,6 @@ export const CardPagination = createVueComponent('CardPagination', {
                 this.currPage = 1;
                 this.goPage();
             }
-
         },
         nextPage() {
             if (this.currPage >= Math.ceil(this.dataArr.length / this.pagination)) {
@@ -111,7 +110,6 @@ export const CardPagination = createVueComponent('CardPagination', {
                 this.currPage += 1;
                 this.goPage();
             }
-
         }
     },
     mounted() {

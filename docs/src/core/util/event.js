@@ -39,6 +39,7 @@ export const eleOpacityChange = function (ele, display, speed) {
         window.$valid.timer = setInterval(() => {
             if (opacity >= 1) {
                 clearInterval(window.$valid.timer);
+                window.$valid.timer = null;
             }
             opacity += 0.1;
             ele.style.opacity = opacity;
@@ -50,6 +51,7 @@ export const eleOpacityChange = function (ele, display, speed) {
                 clearTimeout(window.$valid.timer2);
                 window.$valid.timer2 = setTimeout(() => {
                     ele.style.display = 'none';
+                    window.$valid.timer2 = null;
                 }, 500)
             }
             opacity -= 0.1;
@@ -93,16 +95,20 @@ export function TimeLineBtnActive(t) {
 }
 
 export function showThemeBox() {
-    const themeBoxInner = $valid.util.dom.find('.themeBoxInner');
+    const themeBoxInner = find('.themeBoxInner');
     const display = $valid.util.core.getStyle(themeBoxInner, 'display');
     $valid.util.event.eleOpacityChange(themeBoxInner, display, 5)
 }
 
-
-
-
-
-
+export function spreadLoadPage() {
+    $('.loadPage h1').animate({opacity: 0, zIndex: -9}, 1200, 'swing', function () {
+        $(this).parent().css('z-index', -9);
+    })
+    $('.loadPage div').animate({opacity: 0, width: 0}, 1200, 'swing');
+    setTimeout(() => {
+        $('body .loadPage').remove();
+    }, 3000)
+}
 
 
 

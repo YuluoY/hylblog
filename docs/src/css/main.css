@@ -61,12 +61,5 @@ main .last-update-time{
     cursor: pointer;
 }
 
-.pagingActive {
-    background-color: #42B983;
-}
-
 /*endregion */
 
-#timeLineBox{
-
-}
