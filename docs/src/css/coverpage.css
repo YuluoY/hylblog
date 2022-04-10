@@ -2,7 +2,7 @@ section.cover.has-mask .mask {
     opacity: 0;
 }
 
-.github-corner svg{
+.github-corner svg {
     transition: 1s;
 }
 
@@ -151,16 +151,10 @@ section.cover.has-mask .mask {
     display: flex;
     justify-content: center;
     bottom: 100px;
-    right: -2em;
     opacity: 0.5;
 }
 
-.drawDownBtnBox .drawDownBtn {
-    font-size: 2em;
-    transition: 1s;
-}
-
-.drawDownBtnBox .drawDownBtn i {
+.drawDownBtnBox .drawDownBtn, i {
     font-size: 2em;
     transition: 1s;
 }
