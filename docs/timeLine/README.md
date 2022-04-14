@@ -2,6 +2,13 @@
 
 <TimeLine-box timeLineYear="2022">
 
+<time-line title="Mongoose之聚合查询"
+content="Mongoose的aggregate使用"
+href="article/2022/front-end/Mongoose之聚合查询.md"
+year=2022 month_day="04/14"
+name="雨落">
+</time-line>
+
 <time-line title="加载页面的实现"
 content="加载页面可以很好的解决浏览器在渲染DOM树时出现的样式问题。可能因为网速原因或者需要加载的文件过多，从而造成显示不完整的内容或样式，影响体验。
 添加一个加载页面能有效的进行过渡。"

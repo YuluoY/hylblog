@@ -95,7 +95,7 @@ export const parts = Object.create(null);
             `,
             onclick:function (){
                 alert('😄');
-                location.href = '/';
+                location.reload();
             }
         })
     }
