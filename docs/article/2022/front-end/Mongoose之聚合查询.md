@@ -1,7 +1,7 @@
 # Mongoose之aggregate
 
 > 如果在本地安装了[mongodb](https://www.mongodb.org.cn/)，那么在终端输入`mongo`就会显示你的数据库连接url。
-> 首先你得开启了mongodb服务，具体的请参考[我的MongoDB笔记](../../../notes/MongoDB.md)。
+> 首先你得开启了mongodb服务，具体的请参考[我的MongoDB笔记](/notes/MongoDB.md)。
 
 ## 连接MongoDB
 
