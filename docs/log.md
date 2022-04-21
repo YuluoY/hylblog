@@ -28,6 +28,7 @@
 :star2: **关于本站**：如果有什么bug、意见欢迎在主页下评论留言，或通过联系方式联系我，也可在[github](https://github.com/YuluoY/hylblog/issues)上提issues，不胜感激🙏。
 
 <card-pagination>
+<Card href="life/2022/博客系统开发感想.md" title="博客系统开发感想" name="雨落" date="2022/04/21" category="生活随感"></Card>
 <Card href="article/2022/front-end/Mongoose之聚合查询.md" title="Mongoose之聚合查询" name="雨落" date="2022/04/14" category="技术文章"></Card>
 <Card href="article/2022/front-end/加载页面的实现.md" title="加载页面的实现" name="雨落" date="2022/04/10" category="技术文章"></Card>
 <Card href="https://www.tangyuxian.com/2021/04/08/%E5%89%8D%E7%AB%AF/JavaScript/js-%E5%B8%B8%E7%94%A8%E7%9A%84js%E5%B7%A5%E5%85%B7%E5%87%BD%E6%95%B0/"
