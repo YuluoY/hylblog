@@ -186,3 +186,21 @@ export const TimeLine = createVueComponent('time-line', {
         });
     },
 })
+
+// export const MyVideoPlayer = createVueComponent('MyVideoPlayer', {
+//     name: 'MyVideoPlayer',
+//     template:`
+//         <template>
+//             <div id="videoPlayer">
+//                 <h1>我是videoPlayer</h1>
+//             </div>
+//         </template>
+//     `,
+//     data(){
+//
+//     },
+//     method:{
+//
+//     },
+//
+// })

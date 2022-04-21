@@ -37,8 +37,9 @@ let articleSchema = new db.Schema({
     title: {type: String},
     cate: {type: String}
 })
-const Article = db.model('Article', articleSchema, 'article');  // 如果不设置第三个参数，mongoose将会创建articles表
-const Category = db.model("Category", categorySchema, 'category'); // 如果不设置第三个参数，mongoose将会创建categories表
+// model 参数一：模型名称。 参数二：schema实例，模型实例。  参数三：数据库表名
+const Article = db.model('Article', articleSchema, 'article'); 
+const Category = db.model("Category", categorySchema, 'category');
 ```
 
 ## 数据导入

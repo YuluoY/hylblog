@@ -1,7 +1,8 @@
-.sidebar .app-name .app-name-link img{
+.sidebar .app-name .app-name-link img {
     max-width: 30%
 }
-main .last-update-time{
+
+main .last-update-time {
     text-align: right;
     color: #9ba6b3;
     font-size: 1.2em;
@@ -63,3 +64,37 @@ main .last-update-time{
 
 /*endregion */
 
+.videoPlayer {
+    position: fixed;
+    bottom: 2rem;
+    left: 0;
+    width: 16rem;
+    height: 4rem;
+    z-index: 999999;
+}
+
+.videoPlayer .videoPlayerBox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-size: 0.8rem;
+}
+
+.videoPlayer .videoPlayerBox .left {
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+
+.videoPlayer .videoPlayerBox .left img {
+    width: 3rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    border-radius: 50%;
+    border: solid 0.3rem white;
+}
+
+.videoPlayer .videoPlayerBox .right {
+    width: 70%;
+    background-color: #9e9da2;
+}

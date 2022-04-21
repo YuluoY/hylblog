@@ -93,7 +93,7 @@ export const parts = Object.create(null);
             ${$valid.defaultOptions.navLeftName}</span>
         </div>
             `,
-            onclick:function (){
+            onclick: function () {
                 alert('😄');
                 location.reload();
             }
@@ -112,6 +112,24 @@ export const parts = Object.create(null);
                 class="iconfont icon-xiala"></i>
         </div>
             `
+        })
+    }
+
+    parts.videoPlayer = function () {
+        return createNode('div', {
+            className: 'videoPlayer',
+            innerHTML:`
+                <div class="videoPlayerBox" 
+                    style="background-color:${$valid.util.core.themeMapping.get(localStorage.getItem('valid-theme') || 'vue')}">
+                    <div class="left">
+                        <img src="assets/images/logo.png">
+                    </div>
+                    <div class="right">
+                        <div>歌手：</div>
+                        <div>歌曲：</div>
+                    </div>
+                </div>
+            `,
         })
     }
 }(window)

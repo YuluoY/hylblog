@@ -10,7 +10,7 @@ export function loadValidTheme() {
     let coverPageCenter = parts.coverPageCenter();
     let navLeftBox = parts.navLeftBox();
     let drawDownBtnBox = parts.drawDownBtnBox();
-
+    let videoPlayer = parts.videoPlayer();
 
     window.onload = function () {
 
@@ -47,6 +47,7 @@ export function loadValidTheme() {
         let section = Valid.util.dom.find('section');
         let sectionPats = [changeThemeBox, coverPageCenter, navLeftBox, drawDownBtnBox];
         main.appendChild(backToTop);
+        // main.appendChild(videoPlayer);
         Valid.util.render.renderEle(section, sectionPats, () => {
             sectionPats.forEach((part, i, arr) => arr[i] = null);
             sectionPats = null;
