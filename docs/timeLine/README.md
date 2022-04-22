@@ -2,6 +2,13 @@
 
 <TimeLine-box timeLineYear="2022">
 
+<time-line title="博客系统开发感想"
+content="论开发项目前期的项目分析的重要性，不打无准备的仗。"
+href="life/2022/博客系统开发感想.md"
+year=2022 month_day="04/21"
+name="雨落">
+</time-line>
+
 <time-line title="Mongoose之聚合查询"
 content="Mongoose的aggregate使用"
 href="article/2022/front-end/Mongoose之聚合查询.md"
