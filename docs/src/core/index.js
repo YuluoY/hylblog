@@ -1,5 +1,6 @@
 import Valid from "./util/index.js";
 import {parts} from "./template.js";
+import './util/init.js'
 
 export function loadValidTheme() {
 

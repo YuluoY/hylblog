@@ -44,7 +44,9 @@ export const CardPagination = createVueComponent('CardPagination', {
     template: `
         <div id="cardPagination" v-if="isShow">
             <div v-for="(data, i) in dataArrTemp" :key="i">
-                <Card :href="data.href"
+                <Card 
+                    class="div1"
+                    :href="data.href"
                     :title="data.title"
                     :name="data.name"
                     :date="data.date"
@@ -86,7 +88,11 @@ export const CardPagination = createVueComponent('CardPagination', {
             const pageBtn = event.target;
             pageBtn.className = 'pagingActive';
             $(pageBtn).addClass('pagingActive').css('background-color', this.initPaginationBtnBg());
-            $(pageBtn).siblings().removeClass('pagingActive').css('background-color', '');
+            $(pageBtn).siblings().each((index, item) => {
+                if (item.nodeName === 'BUTTON') {
+                    $(item).removeClass('pagingActive').css('background-color', '#EFEFEF');
+                }
+            })
             let s = (parseInt(pageBtn.innerText) - 1) * this.pagination;
             this.dataArrTemp = this.dataArr.slice(s, s + this.pagination);
             this.currPage = parseInt(pageBtn.innerText);

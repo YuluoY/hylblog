@@ -1,4 +1,4 @@
-import {getStyle, themeMapping} from "./core.js";
+import {cardBorderStyleChange, getStyle, themeMapping} from "./core.js";
 import {find} from "./dom.js";
 
 // export function Events(Base){
@@ -73,7 +73,7 @@ export function changeTheme(themeName = 'vue') {
             $('.drawDownBtn i').css('color', currThemeColor);
             $('.pagingActive').css('background-color', currThemeColor);
             $('#progress-display').css('background-color', currThemeColor);
-
+            $('.card-border-style').html(cardBorderStyleChange(currThemeColor))
         })
         themeLinkTag.href = `assets/theme/${themeName}.css`;
         localStorage.setItem('valid-theme', themeName);

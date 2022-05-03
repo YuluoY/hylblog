@@ -46,6 +46,26 @@ export function getStyles(ele) {
     return getComputedStyle(ele);
 }
 
+export function cardBorderStyleChange(currThemeColor) {
+    return (`
+            .div1:hover:before {
+        width: 100%;
+        height: 100%;
+        transition: width 0.2s ease-in, height 0.2s ease-in 0.2s;
+        border-top-color: ${currThemeColor};
+        border-right-color: ${currThemeColor};
+    }
+
+    .div1:hover:after {
+        width: 100%;
+        height: 100%;
+        transition: border-color 0s ease-in 0.4s, width 0.2s ease-in 0.4s, height 0.3s ease-in 0.6s;
+        border-bottom-color: ${currThemeColor};
+        border-left-color: ${currThemeColor};
+    }
+            `)
+}
+
 export const themeMapping = new Map({
     [Symbol.iterator]: function* () {
         yield ['buble', '#0074D9'];
