@@ -1,6 +1,7 @@
 # 基于[docsify](https://docsify.js.org/#/)开发的主题
-
-> 前提是需要下载[Nodejs](http://nodejs.cn/)
+> 演示地址：[demo](https://yuluoy.github.io/hylblog/#/)
+> 
+> 拉取到本地后运行，前提是需要下载安装[Nodejs](http://nodejs.cn/)环境
 
 1、使用git将项目拉取到本地
 ```shell
