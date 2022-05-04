@@ -12,6 +12,7 @@
   * [ES6模块化问题解决](article/2022/front-end/ES6模块化问题解决.md)
   * [加载页面的实现](article/2022/front-end/加载页面的实现.md)
   * [Mongoose之聚合查询](article/2022/front-end/Mongoose之聚合查询.md)
+  * [JS的宏任务与微任务队列](article/2022/front-end/JS的宏任务与微任务队列.md)
 * [随笔](/)
   * [关于我的破烂小屋](life/2022/home.md)
   * [一个周敲代码的反思](life/2022/一个周敲代码的反思.md)

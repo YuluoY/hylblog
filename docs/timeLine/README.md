@@ -2,6 +2,13 @@
 
 <TimeLine-box timeLineYear="2022">
 
+<time-line title="JS的宏任务与微任务队列"
+content="如何解决递归栈溢出的问题，以及主线程、微任务、宏任务队列的执行流程。"
+href="article/2022/front-end/JS的宏任务与微任务队列.md"
+year=2022 month_day="05/04"
+name="雨落">
+</time-line>
+
 <time-line title="博客系统开发感想"
 content="论开发项目前期的项目分析的重要性，不打无准备的仗。"
 href="life/2022/博客系统开发感想.md"

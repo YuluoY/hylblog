@@ -161,7 +161,7 @@ export const TimeLine = createVueComponent('time-line', {
                     <div class="timeline-content" @click="toArticle">
                         <h2 class="content-title">{{$attrs.title}}</h2>
                         <div class="content-details">
-                            <p v-html="'&emsp;&emsp;'+$attrs.content"></p>
+                            <div v-html="'&emsp;&emsp;'+$attrs.content"></div>
                         </div>
                     </div><!-- timeline content -->
             </div><!-- .timeline-post --> 
