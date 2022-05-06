@@ -2,6 +2,15 @@
 
 <TimeLine-box timeLineYear="2022">
 
+<time-line title="关于我的不自量力"
+content="这是我第二次笔试了，第一次笔试是在美团，
+        我只想说美团的小美太<b style='color:red;font-size:26px;'>“友好”</b>了。
+        第二次是字节跳动，说一下笔试问题吧。好得让这次笔试有点收获😭。"
+href="life/2022/关于我的不自量力.md"
+year=2022 month_day="05/06"
+name="雨落">
+</time-line>
+
 <time-line title="JS的宏任务与微任务队列"
 content="如何解决递归栈溢出的问题，以及主线程、微任务、宏任务队列的执行流程。"
 href="article/2022/front-end/JS的宏任务与微任务队列.md"
