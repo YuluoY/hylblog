@@ -2,6 +2,13 @@
 
 <TimeLine-box timeLineYear="2022">
 
+<time-line title="论‘小组’作业"
+content="蚌埠住了，真让人破防。小组作业真***好，我直接爱了爱了🌹😃"
+href="life/2022/论小组作业.md"
+year=2022 month_day="05/09"
+name="雨落">
+</time-line>
+
 <time-line title="关于我的不自量力"
 content="这是我第二次笔试了，第一次笔试是在美团，
         我只想说美团的小美太<b style='color:red;font-size:26px;'>“友好”</b>了。

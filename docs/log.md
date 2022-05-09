@@ -24,6 +24,7 @@
 :star2: **关于本站**：如果有什么bug、意见欢迎在主页下评论留言，或通过联系方式联系我，也可在[github](https://github.com/YuluoY/hylblog/issues)上提issues，不胜感激🙏。
 
 <card-pagination>
+<Card href="life/2022/论小组作业.md" title="论'小组'作业" name="雨落" date="2022/05/09" category="生活随感"></Card>
 <Card href="life/2022/关于我的不自量力.md" title="关于我的不自量力" name="雨落" date="2022/05/06" category="生活随感"></Card>
 <Card href="article/2022/front-end/JS的宏任务与微任务队列.md" title="JS的宏任务与微任务队列" name="雨落" date="2022/05/04" category="技术文章"></Card>
 <Card href="life/2022/博客系统开发感想.md" title="博客系统开发感想" name="雨落" date="2022/04/21" category="生活随感"></Card>
